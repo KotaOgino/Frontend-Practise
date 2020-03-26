@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>15</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card__number">
+        <label for="card_number">カード番号</label>
+        <input type="text" name="card_number" value="" class="card__input" disabled>
+      </div>
+      <div class="card__name">
+        <label for="card_name">カード氏名</label>
+        <input type="text" name="card_name" value="" class="card__input" disabled>
+      </div>
+      <div class="card__expire">
+        有効期限
+        <label for="card_month">月</label>
+        <input type="text" name="card_month" value="" class="card__input card__input-expire" disabled>
+        <label for="card_year">年</label>
+        <input type="text" name="card_year" value="" class="card__input card__input-expire" disabled>
+      </div>
+      <div class="card__cvv">
+        <label for="card_cvv">CVV</label>
+        <input type="text" name="card_cvv" value="" class="card__input card__input-cvv" disabled>
+      </div>
+    </div>
+    <form class="form" method="POST">
+      <div>
+        <label for="number">カード番号</label>
+        <input type="text" name="number" value="" class="form__input" placeholder="123412341234(半角数字)">
+        <p class="form__alert form__alert-number"></p>
+      </div>
+      <div>
+        <label for="name">カード氏名</label>
+        <input type="text" name="name" value="" class="form__input form__input-name" placeholder="KOTA OGINO(大文字)">
+        <p class="form__alert form__alert-name"></p>
+      </div>
+      <div class="form__expire">
+        有効期限：
+        <label for="form__expire-month">月</label>
+        <select class="form__expire-select form__expire-month" name="month">
+          <option value="0">選択して下さい</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <label for="form__expire-year">年</label>
+        <select class="form__expire-select form__expire-year" name="year">
+          <option value="0">選択して下さい</option>
+          <option value="2020">20</option>
+          <option value="2021">21</option>
+          <option value="2022">22</option>
+          <option value="2023">23</option>
+          <option value="2024">24</option>
+          <option value="2025">25</option>
+          <option value="2026">27</option>
+        </select>
+        <p class="form__alert form__alert-expire"></p>
+      </div>
+      <div>
+        <label for="form__cvv">CVV</label>
+        <input type="text" name="cvv" value="" class="form__input form__input-cvv">
+        <p class="form__alert form__alert-cvv"></p>
+      </div>
+      <div>
+        <button type="button" name="button" class="form__btn">送信</button>
+      </div>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

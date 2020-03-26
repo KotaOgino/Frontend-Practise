@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* font-size: 16px; */
+}
+
+html,body{
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+img{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.header {
+  /* position: relative; */
+  height: 5vh;
+  background-color: skyblue;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__icon {
+  /* pの親要素 */
+  position: relative;
+  margin-right: 1rem;
+  color: #ffffff;
+}
+
+.header__icon p{
+  position: absolute;
+  left: .7rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.chat {
+  display: flex;
+  justify-content: flex-start;
+  height:95vh;
+}
+
+.chat__menu {
+  width: 20%;
+  background-color: #111111;
+  text-align: left;
+  color: #ffffff;
+}
+
+.chat__menu-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+.chat__menu-title p {
+  font-weight: bold;
+}
+
+.chat__menu-list li {
+  padding: 1rem 1rem;
+}
+
+.chat__menu-list .active {
+  background-color: gray;
+}
+
+.chat__list {
+  position: relative;
+  width: 20%;
+  background-color: #ffffff;
+  border-right: 1px gray solid;
+}
+
+.chat__list li {
+  padding: 1rem;
+}
+
+.chat__list-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 0;
+}
+
+.chat__list-title p {
+  font-weight: bold;
+}
+
+.chat__list-title span {
+  font-size: 12px;
+}
+
+.chat__list .active {
+  background-color: gray;
+}
+
+.chat__list-more {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  background-color: skyblue;
+  color: green;
+  border-radius: 2rem;
+}
+
+.chat__list-more p {
+  text-align: center;
+}
+
+.line {
+  position: relative;
+  width: 60%;
+  background-color: #ffffff;
+}
+
+.line__title {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding: 0 1rem;
+}
+
+.line__title p {
+  font-weight: bold;
+}
+
+.line__title span {
+  font-size: 12px;
+}
+
+.line__title-btn {
+  display: flex;
+}
+
+.line__title-btn div {
+  width: 10rem;
+  background-color: skyblue;
+  border-radius: 1rem;
+  padding: .7rem .5rem;
+  margin: 0 .3rem;
+  color: green;
+  font-size: 12px;
+  text-align: center;
+}
+
+.line__main{
+  padding: 1rem;
+}
+
+.line__main img{
+  float: right;
+  margin-left: 1rem;
+}
+
+.line__main-single{
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-bottom: .5rem;
+  border-radius: 1rem;
+  background-color: skyblue;
+  color: #ffffff;
+}
+
+.line__main-left{
+  float: left;
+  text-align: left;
+}
+
+.line__main-right{
+  float: right;
+  text-align: right;
+}
+
+.line__main-bottom{
+  width: 95%;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.line__main-bottom-info{
+  text-align: right;
+  padding: .2rem 0;
+}
+
+.line__main-bottom-info p{
+  font-size: 10px;
+}
+
+.line__main-bottom-input{
+  height: 5rem;
+  background-color: gray;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.line__main-bottom-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: green;
+}
+
+.line__main-bottom-btn-right{
+  display: flex;
+  align-items: center;
+}
+
+.line__main-bottom-btn-right div{
+  background-color: skyblue;
+  padding: .5rem;
+  margin: 0 .5rem;
+  border-radius: 1rem;
+}
+
+.line__main-bottom-btn-right p{
+  padding: 0 1rem
+}

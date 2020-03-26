@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+}
+
+.header {
+  background-color: gray;
+  padding: 1rem;
+}
+
+.full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+
+.full__prev {
+  z-index: 9999;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: blue;
+}
+
+.full__next {
+  z-index: 9999;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: blue;
+}
+
+.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.full__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  z-index: 2;
+}
+
+.full__img--bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.gallery__list {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 300px;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-row-gap: .3rem;
+  grid-column-gap: .3rem;
+  padding: 1rem;
+}
+
+.template__list {
+  list-style: none;
+}
+
+.template__list--img {
+  width: 300px;
+  height: 300px;
+}
+
+.indicator {
+  padding: 1rem;
+}
+
+.indicator__text {
+  font-size: 3rem;
+}

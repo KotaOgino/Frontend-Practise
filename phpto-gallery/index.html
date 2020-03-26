@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>16</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Ogino's Gallery</h1>
+  </header>
+  <main>
+    <div class="full">
+      <div class="full__prev">
+        <i class="far fa-arrow-alt-circle-left" onclick="prevImage()"></i>
+      </div>
+      <div class="full__next">
+        <i class="far fa-arrow-alt-circle-right" onclick="nextImage()"></i>
+      </div>
+      <img src="" class="full__img">
+      <div class="full__img--bg"></div>
+    </div>
+    <!-- このulに画像を埋め込んでいく -->
+    <ul class="gallery__list"></ul>
+    <!-- <div class="indicator">
+      <p class="indicator__text">Loading...</p>
+    </div> -->
+    <template class="template">
+      <li class="template__list">
+        <img class="template__list--img" src="">
+      </li>
+    </template>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
